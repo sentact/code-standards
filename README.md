@@ -1,2 +1,1 @@
-# code-standards
-Sentact Coding Standards
+# Sentact Coding Standards

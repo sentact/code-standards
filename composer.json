@@ -1,0 +1,9 @@
+{
+  "name": "sentact/code-standards",
+  "description": "Sentact Coding Standards",
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.x-dev"
+    }
+  }
+}
