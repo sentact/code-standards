@@ -4,4 +4,16 @@
 
     <rule ref="PSR2"/>
 
+    <!-- Proper docblock formatting -->
+    <rule ref="Generic.Commenting.DocComment"/>
+
+    <!-- Function comments -->
+    <rule ref="Squiz.Commenting.FunctionComment">
+        <exclude name="Squiz.Commenting.FunctionComment.MissingReturn"/>
+        <exclude name="Squiz.Commenting.FunctionComment.ParamCommentFullStop" />
+        <!-- TODO: Allow bool and int, then we can enable param var name and invalid return -->
+        <exclude name="Squiz.Commenting.FunctionComment.IncorrectParamVarName" />
+        <exclude name="Squiz.Commenting.FunctionComment.InvalidReturn" />
+    </rule>
+
 </ruleset>
