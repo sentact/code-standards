@@ -2,10 +2,19 @@
 <ruleset name="Sentact">
     <description>The Sentact coding standard.</description>
 
-    <rule ref="PSR2"/>
+    <rule ref="PSR2">
+        <exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace"/>
+        <exclude name="Squiz.Classes.ValidClassName.NotCamelCaps"/>
+    </rule>
 
     <!-- Proper docblock formatting -->
     <rule ref="Generic.Commenting.DocComment"/>
+    <rule ref="Generic.Commenting.DocComment.ShortNotCapital">
+        <severity>0</severity>
+    </rule>
+    <rule ref="Generic.Commenting.DocComment.LongNotCapital">
+        <severity>0</severity>
+    </rule>
 
     <!-- Function comments -->
     <rule ref="Squiz.Commenting.FunctionComment">
